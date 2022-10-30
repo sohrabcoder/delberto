@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+	<!-- Styling CSS -->
+	<link rel="stylesheet" href="/Assests/CSS/style.css">
+
+	<!--Google Fonts  -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap');
+	</style>
+
+	<!-- Fonts Awesome CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="icon" href="/Assests/images/icon-title1.jpg">
+    <title>Cart - Delberto</title>
+  </head>
+  <body>
+
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="/index (2).html"><img src="/Assests/Image/delberto logo.png" width="150px" alt=""></a>
+			</div>
+		
+		<nav>
+			<ul id="MenuItems">
+				
+				<li><a href="#">Login</a></li>
+			</ul>
+		</nav>
+		<a href="Cart.html"><img src="/Assests/Image/cart.png" width="30px" height="30px"></a>
+		<img src="/Assests/images/menu.png" class="menu-icon"
+		       onclick="menutoggle()">
+	  </div> 
+    </div>
+
+
+
+    <!-- ............Account............. -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            
+                        <span onclick="register()">Login</span>
+                            
+                        </div>
+
+                       <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+     
+		<!-- ............Footer............. -->
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col-1">
+						<img src="/Assests/Image/footer-1.svg" alt="">
+						<h4><strong>Delivery</strong></h4>
+						<p>Local Delivery happens within 4-24 hours</p>
+						<p>Rest Delivery happens within 2-4 days</p>
+						
+					</div>
+					<div class="footer-col-2">
+						<img src="/Assests/Image/footer-2.svg" width="20px">
+						<h4>Payment Options</h4>
+						<ul>
+							<li>Cash on Delivery</li>
+							<li>Debit Card</li>
+							<li>Credit Card</li>
+							<li>phone pe</li>
+							<li>Gpay</li>
+						</ul>
+					</div>
+					<div class="footer-col-3">
+						<img src="/Assests/Image/footer-3.svg" alt="">
+						<h4>Customer Support</h4>
+						<ul>
+							<li>rafimech40@gmail.com</li>
+							<li>+91 6299631904</li>
+							
+						</ul>
+					</div>
+					<div class="footer-col-4">
+						<h4>Follow us</h4>
+						<ul>
+							<li>Facebook</li>
+							<li>Twitter</li>
+							<li>Instagram</li>
+							<li>Youtube</li>	
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<p class="copyright">Copyright 2022, Designed By- MD RAFIUDDIN</p>
+			</div>
+		</div>
+
+
+
+		
+
+    
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<!-- ..........js for toggle menu........... -->
+
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeight = "0px";
+
+		function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px") 
+			{
+				MenuItems.style.maxHeight = "200px";
+			}
+		else
+			{
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
+        
+
+
+  </body>
+</html>
